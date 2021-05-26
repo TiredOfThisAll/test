@@ -3,10 +3,10 @@ from flask import Flask
 application = Flask(__name__)
 
 
-@app.route('/')
+@application.route('/')
 def hello_world():
     return 'Hello World!'
 
 
 if __name__ == '__main__':
-    appplication.run(port=80)
+    application.run(port=80)
